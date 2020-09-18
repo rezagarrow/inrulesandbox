@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "value": "Equifax Sucks",
+    "value": "Equifax Sucks [DateTime:Now]",
     "type": "string"
   }
 }
