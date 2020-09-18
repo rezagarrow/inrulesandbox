@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Assessment record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 26,
+  "OrderIndex": 38,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -88,6 +88,10 @@
           {
             "name": "AccountRep",
             "value": "[Record:AccountRep]"
+          },
+          {
+            "name": "AssessmentStatus",
+            "value": "[Record:AssessmentStatus]"
           }
         ],
         "Headers": []
