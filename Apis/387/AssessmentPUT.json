@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Assessment record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 19,
+  "OrderIndex": 27,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -111,6 +111,23 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "AccountRep",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"AccountRep is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
     }
   ],
   "Actions": [
@@ -127,7 +144,8 @@
         "Title": "[Title]",
         "WorkEmail": "[WorkEmail]",
         "Phonenumber": "[Phonenumber]",
-        "AssessmentDate": "[AssessmentDate]"
+        "AssessmentDate": "[AssessmentDate]",
+        "AccountRep": "[AccountRep]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
