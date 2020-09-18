@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Company record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 3,
+  "OrderIndex": 11,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -66,6 +66,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Type",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -77,7 +86,8 @@
         "Name": "[Name]",
         "Description": "[Description]",
         "DateFounded": "[DateFounded]",
-        "Website": "[Website]"
+        "Website": "[Website]",
+        "Type": "[Type]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
