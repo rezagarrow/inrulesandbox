@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Account Rep record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 23,
+  "OrderIndex": 31,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -117,6 +117,23 @@
           "OrderIndex": 0
         }
       ]
+    },
+    {
+      "Name": "DNNUserID",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"DNNUserID is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
     }
   ],
   "Actions": [
@@ -131,7 +148,8 @@
         "Email": "[Email]",
         "Phone": "[Phone]",
         "Signature": "[Signature]",
-        "DisplayName": "[DisplayName]"
+        "DisplayName": "[DisplayName]",
+        "DNNUserID": "[DNNUserID]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
