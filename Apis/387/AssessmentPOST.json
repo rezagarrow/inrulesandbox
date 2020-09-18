@@ -1,0 +1,198 @@
+{
+  "Name": "Assessment",
+  "Description": "Creates a new record of type Assessment",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 17,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "AssessmentTitle",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"AssessmentTitle is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "AssessmentSubtitle",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "CompanyName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "FirstName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "LastName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Title",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "WorkEmail",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Phonenumber",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AssessmentDate",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.Assessment",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "AssessmentTitle": "[AssessmentTitle]",
+        "AssessmentSubtitle": "[AssessmentSubtitle]",
+        "CompanyName": "[CompanyName]",
+        "FirstName": "[FirstName]",
+        "LastName": "[LastName]",
+        "Title": "[Title]",
+        "WorkEmail": "[WorkEmail]",
+        "Phonenumber": "[Phonenumber]",
+        "AssessmentDate": "[AssessmentDate]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "Assessment"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.Assessment",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "Assessment"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "AssessmentTitle",
+            "value": "[CreatedRecord:AssessmentTitle]"
+          },
+          {
+            "name": "AssessmentSubtitle",
+            "value": "[CreatedRecord:AssessmentSubtitle]"
+          },
+          {
+            "name": "CompanyName",
+            "value": "[CreatedRecord:CompanyName]"
+          },
+          {
+            "name": "FirstName",
+            "value": "[CreatedRecord:FirstName]"
+          },
+          {
+            "name": "LastName",
+            "value": "[CreatedRecord:LastName]"
+          },
+          {
+            "name": "Title",
+            "value": "[CreatedRecord:Title]"
+          },
+          {
+            "name": "WorkEmail",
+            "value": "[CreatedRecord:WorkEmail]"
+          },
+          {
+            "name": "Phonenumber",
+            "value": "[CreatedRecord:Phonenumber]"
+          },
+          {
+            "name": "AssessmentDate",
+            "value": "[CreatedRecord:AssessmentDate]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://inrule-valcalcsandbox.apps.plantanapp.com/api/Assessment?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
