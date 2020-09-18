@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Company Type record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 6,
+  "OrderIndex": 14,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
