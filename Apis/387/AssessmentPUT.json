@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Assessment record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 27,
+  "OrderIndex": 39,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -128,6 +128,23 @@
           "OrderIndex": 0
         }
       ]
+    },
+    {
+      "Name": "AssessmentStatus",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"AssessmentStatus is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
     }
   ],
   "Actions": [
@@ -145,7 +162,8 @@
         "WorkEmail": "[WorkEmail]",
         "Phonenumber": "[Phonenumber]",
         "AssessmentDate": "[AssessmentDate]",
-        "AccountRep": "[AccountRep]"
+        "AccountRep": "[AccountRep]",
+        "AssessmentStatus": "[AssessmentStatus]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
