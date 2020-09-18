@@ -1,0 +1,39 @@
+<module type="ActionForm" version="05.08.13.00">
+    <contentKey />
+    <moduleID>381</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Reset Password</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>69543899-cf0b-4e30-9668-8891c030d413</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Form</definition>
+    <moduledefinition>avt.Action Form</moduledefinition>
+</module>
