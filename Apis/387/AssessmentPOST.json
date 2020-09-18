@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Assessment",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 25,
+  "OrderIndex": 37,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -111,6 +111,23 @@
           "OrderIndex": 0
         }
       ]
+    },
+    {
+      "Name": "AssessmentStatus",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"AssessmentStatus is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
     }
   ],
   "Actions": [
@@ -128,7 +145,8 @@
         "WorkEmail": "[WorkEmail]",
         "Phonenumber": "[Phonenumber]",
         "AssessmentDate": "[AssessmentDate]",
-        "AccountRep": "[AccountRep]"
+        "AccountRep": "[AccountRep]",
+        "AssessmentStatus": "[AssessmentStatus]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -200,6 +218,10 @@
           {
             "name": "AccountRep",
             "value": "[CreatedRecord:AccountRep]"
+          },
+          {
+            "name": "AssessmentStatus",
+            "value": "[CreatedRecord:AssessmentStatus]"
           }
         ],
         "Headers": [
