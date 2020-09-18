@@ -6,7 +6,7 @@
   },
   "name": "Test",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "parser": "<parser><type>string</type><replace>true</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
   "cacheTime": 0,
   "cacheLayer": "Global",
