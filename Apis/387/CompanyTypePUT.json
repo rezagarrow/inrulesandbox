@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Company Type record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 7,
+  "OrderIndex": 15,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
