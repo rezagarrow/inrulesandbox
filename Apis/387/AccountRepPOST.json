@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Account Rep",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 21,
+  "OrderIndex": 29,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -100,6 +100,23 @@
           "OrderIndex": 0
         }
       ]
+    },
+    {
+      "Name": "DNNUserID",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"DNNUserID is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
     }
   ],
   "Actions": [
@@ -114,7 +131,8 @@
         "Email": "[Email]",
         "Phone": "[Phone]",
         "Signature": "[Signature]",
-        "DisplayName": "[DisplayName]"
+        "DisplayName": "[DisplayName]",
+        "DNNUserID": "[DNNUserID]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -174,6 +192,10 @@
           {
             "name": "DisplayName",
             "value": "[CreatedRecord:DisplayName]"
+          },
+          {
+            "name": "DNNUserID",
+            "value": "[CreatedRecord:DNNUserID]"
           }
         ],
         "Headers": [
