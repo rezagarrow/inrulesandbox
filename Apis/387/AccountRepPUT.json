@@ -1,0 +1,159 @@
+{
+  "Name": "AccountRep",
+  "Description": "Updates the information of the provided Account Rep record",
+  "HttpMethod": "PUT",
+  "IsEnabled": true,
+  "OrderIndex": 23,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "FirstName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"FirstName is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "LastName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"LastName is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Title",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Email",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Email is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Phone",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Signature",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "DisplayName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"DisplayName is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.UpdateEntity.0.AccountRep",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "FirstName": "[FirstName]",
+        "LastName": "[LastName]",
+        "Title": "[Title]",
+        "Email": "[Email]",
+        "Phone": "[Phone]",
+        "Signature": "[Signature]",
+        "DisplayName": "[DisplayName]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.UpdateEntity",
+        "EntityIdentifier": "AccountRep"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
