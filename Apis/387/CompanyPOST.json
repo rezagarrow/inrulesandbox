@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Company",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 1,
+  "OrderIndex": 9,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -49,6 +49,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Type",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -60,7 +69,8 @@
         "Name": "[Name]",
         "Description": "[Description]",
         "DateFounded": "[DateFounded]",
-        "Website": "[Website]"
+        "Website": "[Website]",
+        "Type": "[Type]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -108,6 +118,10 @@
           {
             "name": "Website",
             "value": "[CreatedRecord:Website]"
+          },
+          {
+            "name": "Type",
+            "value": "[CreatedRecord:Type]"
           }
         ],
         "Headers": [
