@@ -1,0 +1,24 @@
+{
+  "ApiId": "3f4e2b9583f12e5d94d816",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Purge Suckers",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbUpdateColumn",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "app.Company",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "ColumnsDiffFilter": "Type"
+      }
+    }
+  ],
+  "Actions": [],
+  "OnErrorActions": []
+}
