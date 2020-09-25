@@ -1,6 +1,6 @@
 {
   "Name": "Q1Lookup",
-  "Description": "Updates the information of the provided Q1 Lookup record",
+  "Description": "Updates the information of the provided Q1Lookup record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
   "OrderIndex": 43,
