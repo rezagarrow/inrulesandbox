@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Assessment",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 37,
+  "OrderIndex": 45,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -128,6 +128,15 @@
           "OrderIndex": 0
         }
       ]
+    },
+    {
+      "Name": "QuestionOne",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -146,7 +155,8 @@
         "Phonenumber": "[Phonenumber]",
         "AssessmentDate": "[AssessmentDate]",
         "AccountRep": "[AccountRep]",
-        "AssessmentStatus": "[AssessmentStatus]"
+        "AssessmentStatus": "[AssessmentStatus]",
+        "QuestionOne": "[QuestionOne]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -222,6 +232,10 @@
           {
             "name": "AssessmentStatus",
             "value": "[CreatedRecord:AssessmentStatus]"
+          },
+          {
+            "name": "QuestionOne",
+            "value": "[CreatedRecord:QuestionOne]"
           }
         ],
         "Headers": [
