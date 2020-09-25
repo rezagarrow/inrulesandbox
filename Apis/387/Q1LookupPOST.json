@@ -1,0 +1,170 @@
+{
+  "Name": "Q1Lookup",
+  "Description": "Creates a new record of type Q1 Lookup",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 41,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "Title",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"Title is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Description",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Value",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ReportValue",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "ReportInsight",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Graphic",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Icon",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.Q1Lookup",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Title": "[Title]",
+        "Description": "[Description]",
+        "Value": "[Value]",
+        "ReportValue": "[ReportValue]",
+        "ReportInsight": "[ReportInsight]",
+        "Graphic": "[Graphic]",
+        "Icon": "[Icon]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "Q1Lookup"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.Q1Lookup",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "Q1Lookup"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Title",
+            "value": "[CreatedRecord:Title]"
+          },
+          {
+            "name": "Description",
+            "value": "[CreatedRecord:Description]"
+          },
+          {
+            "name": "Value",
+            "value": "[CreatedRecord:Value]"
+          },
+          {
+            "name": "ReportValue",
+            "value": "[CreatedRecord:ReportValue]"
+          },
+          {
+            "name": "ReportInsight",
+            "value": "[CreatedRecord:ReportInsight]"
+          },
+          {
+            "name": "Graphic",
+            "value": "[CreatedRecord:Graphic]"
+          },
+          {
+            "name": "Icon",
+            "value": "[CreatedRecord:Icon]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://inrule-valcalcsandbox.apps.plantanapp.com/api/Q1Lookup?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
