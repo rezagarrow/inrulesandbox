@@ -1,6 +1,6 @@
 {
   "Name": "Q1Lookup",
-  "Description": "Creates a new record of type Q1 Lookup",
+  "Description": "Creates a new record of type Q1Lookup",
   "HttpMethod": "POST",
   "IsEnabled": true,
   "OrderIndex": 41,
