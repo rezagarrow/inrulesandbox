@@ -1,6 +1,6 @@
 {
   "Name": "Q1Lookup",
-  "Description": "Returns the information of a Q1 Lookup record in JSON object format.",
+  "Description": "Returns the information of a Q1Lookup record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
   "OrderIndex": 42,
