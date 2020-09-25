@@ -1,6 +1,6 @@
 {
   "Name": "Q1Lookup",
-  "Description": "Deletes the provided Q1 Lookup record",
+  "Description": "Deletes the provided Q1Lookup record",
   "HttpMethod": "DELETE",
   "IsEnabled": true,
   "OrderIndex": 44,
