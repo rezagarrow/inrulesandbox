@@ -100,6 +100,22 @@
           {
             "name": "QuestionTwo",
             "value": "[Record:QuestionTwo]"
+          },
+          {
+            "name": "QuestionTwoB",
+            "value": "[Record:QuestionTwoB]"
+          },
+          {
+            "name": "QuestionThree",
+            "value": "[Record:QuestionThree]"
+          },
+          {
+            "name": "Comments",
+            "value": "[Record:Comments]"
+          },
+          {
+            "name": "AssessmentUrl",
+            "value": "[Record:AssessmentUrl]"
           }
         ],
         "Headers": []
