@@ -163,6 +163,42 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "QuestionTwoB",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "QuestionThree",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Comments",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "AssessmentUrl",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -183,7 +219,11 @@
         "AccountRep": "[AccountRep]",
         "AssessmentStatus": "[AssessmentStatus]",
         "QuestionOne": "[QuestionOne]",
-        "QuestionTwo": "[QuestionTwo]"
+        "QuestionTwo": "[QuestionTwo]",
+        "QuestionTwoB": "[QuestionTwoB]",
+        "QuestionThree": "[QuestionThree]",
+        "Comments": "[Comments]",
+        "AssessmentUrl": "[AssessmentUrl]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
