@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type QLookup",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 57,
+  "OrderIndex": 65,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -76,6 +76,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "QNum",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -90,7 +99,8 @@
         "ReportValue": "[ReportValue]",
         "ReportInsight": "[ReportInsight]",
         "Graphic": "[Graphic]",
-        "Icon": "[Icon]"
+        "Icon": "[Icon]",
+        "QNum": "[QNum]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -150,6 +160,10 @@
           {
             "name": "Icon",
             "value": "[CreatedRecord:Icon]"
+          },
+          {
+            "name": "QNum",
+            "value": "[CreatedRecord:QNum]"
           }
         ],
         "Headers": [
