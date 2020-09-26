@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided QLookup record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 59,
+  "OrderIndex": 67,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -93,6 +93,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "QNum",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -107,7 +116,8 @@
         "ReportValue": "[ReportValue]",
         "ReportInsight": "[ReportInsight]",
         "Graphic": "[Graphic]",
-        "Icon": "[Icon]"
+        "Icon": "[Icon]",
+        "QNum": "[QNum]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
