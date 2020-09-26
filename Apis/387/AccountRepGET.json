@@ -20,6 +20,13 @@
           "IsDeleted": false,
           "IsEnabled": false,
           "OrderIndex": 0
+        },
+        {
+          "Data": "{\"Message\":\"Invalid number\"}",
+          "Type": "default-integer",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 1
         }
       ]
     }
