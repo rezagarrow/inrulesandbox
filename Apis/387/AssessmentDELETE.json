@@ -3,7 +3,7 @@
   "Description": "Deletes the provided Assessment record",
   "HttpMethod": "DELETE",
   "IsEnabled": true,
-  "OrderIndex": 64,
+  "OrderIndex": 72,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
