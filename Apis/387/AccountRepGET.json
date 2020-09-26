@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Account Rep record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 30,
+  "OrderIndex": 50,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -20,13 +20,6 @@
           "IsDeleted": false,
           "IsEnabled": false,
           "OrderIndex": 0
-        },
-        {
-          "Data": "{\"Message\":\"Invalid number\"}",
-          "Type": "default-integer",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 1
         }
       ]
     }
