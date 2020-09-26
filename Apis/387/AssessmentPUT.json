@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Assessment record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 55,
+  "OrderIndex": 63,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -154,6 +154,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "QuestionTwo",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -173,7 +182,8 @@
         "AssessmentDate": "[AssessmentDate]",
         "AccountRep": "[AccountRep]",
         "AssessmentStatus": "[AssessmentStatus]",
-        "QuestionOne": "[QuestionOne]"
+        "QuestionOne": "[QuestionOne]",
+        "QuestionTwo": "[QuestionTwo]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
