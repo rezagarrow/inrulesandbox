@@ -3,7 +3,7 @@
   "Description": "Returns the information of a QLookup record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 58,
+  "OrderIndex": 66,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -76,6 +76,10 @@
           {
             "name": "Icon",
             "value": "[Record:Icon]"
+          },
+          {
+            "name": "QNum",
+            "value": "[Record:QNum]"
           }
         ],
         "Headers": []
