@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Assessment",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 45,
+  "OrderIndex": 53,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
