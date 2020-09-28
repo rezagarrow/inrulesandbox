@@ -1,7 +1,7 @@
 {
   "ApiId": "1d4695a8b5871a0e5c3a93",
   "ContextPortal": -1,
-  "ContextUser": 2,
+  "ContextUser": 1,
   "IsDebug": false,
   "IsEnabled": true,
   "Name": "Keep Alive",
@@ -97,7 +97,7 @@
       "IsEnabled": true,
       "OrderIndex": 2,
       "Parameters": {
-        "Message": "Keep alive failed to run on schedule [apiResult]"
+        "Message": "Keep alive failed to run on schedule [apiResultContent] [ErrorType], [ErrorMessage]"
       }
     }
   ]
