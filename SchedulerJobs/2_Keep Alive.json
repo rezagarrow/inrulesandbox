@@ -1,0 +1,102 @@
+{
+  "ApiId": "1d4695a8b5871a0e5c3a93",
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Keep Alive",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "RepeatInterval",
+      "Parameters": {
+        "Start": {
+          "Date": "",
+          "Time": "10:00:00 PM"
+        },
+        "Interval": {
+          "Qty": "12",
+          "Unit": {
+            "Value": "Minutes",
+            "IsExpression": false,
+            "Parameters": {}
+          }
+        },
+        "SkipIfRunning": "",
+        "OnMissfire": {
+          "Expression": "",
+          "Value": "FireNow",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "ExecuteApiMethod",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "ApiModule": {
+          "Expression": "",
+          "Value": "387",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "MethodName": {
+          "Expression": "",
+          "Value": "AccountRep#GET",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "HttpMethod": {
+          "Expression": "",
+          "Value": "",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "ProcessResponseType": {
+          "Expression": "",
+          "Value": "0",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "MethodInputs": "",
+        "MethodInputsList": [
+          {
+            "MethodInputName": {
+              "Value": "RecordId",
+              "IsExpression": false,
+              "Parameters": {}
+            },
+            "MethodInputValue": {
+              "Value": "1",
+              "IsExpression": false
+            }
+          }
+        ],
+        "OutputTokenName": "apiResult"
+      }
+    },
+    {
+      "ActionType": "LogError",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {
+        "Message": "Keep alive ran on schedule for [apiResult:Title]"
+      }
+    }
+  ],
+  "OnErrorActions": [
+    {
+      "ActionType": "LogError",
+      "ExecutionType": "OnError",
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {
+        "Message": "Keep alive failed to run on schedule [apiResult]"
+      }
+    }
+  ]
+}
