@@ -86,7 +86,7 @@
       "IsEnabled": true,
       "OrderIndex": 1,
       "Parameters": {
-        "Message": "Keep alive ran on schedule for [apiResult:Title]"
+        "Message": "Keep alive ran on schedule for [apiResult:AssessmentTitle]"
       }
     }
   ],
