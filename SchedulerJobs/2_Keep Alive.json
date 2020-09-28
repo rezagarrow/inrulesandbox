@@ -34,10 +34,20 @@
   ],
   "Actions": [
     {
-      "ActionType": "ExecuteApiMethod",
+      "ActionType": "LoadUser",
       "ExecutionType": "OnExecute",
       "IsEnabled": true,
       "OrderIndex": 0,
+      "Parameters": {
+        "Id": "1",
+        "Portal": "0"
+      }
+    },
+    {
+      "ActionType": "ExecuteApiMethod",
+      "ExecutionType": "OnExecute",
+      "IsEnabled": true,
+      "OrderIndex": 1,
       "Parameters": {
         "ApiModule": {
           "Expression": "",
@@ -84,7 +94,7 @@
       "ActionType": "LogError",
       "ExecutionType": "OnExecute",
       "IsEnabled": true,
-      "OrderIndex": 1,
+      "OrderIndex": 2,
       "Parameters": {
         "Message": "Keep alive ran on schedule for [apiResult:Content]"
       }
@@ -95,7 +105,7 @@
       "ActionType": "LogError",
       "ExecutionType": "OnError",
       "IsEnabled": true,
-      "OrderIndex": 2,
+      "OrderIndex": 3,
       "Parameters": {
         "Message": "Keep alive failed to run on schedule [apiResultContent] [ErrorType], [ErrorMessage]"
       }
