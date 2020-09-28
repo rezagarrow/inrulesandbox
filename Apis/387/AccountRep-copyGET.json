@@ -1,0 +1,74 @@
+{
+  "Name": "AccountRep-copy",
+  "Description": "Returns the information of a Account Rep record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 50,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.2",
+      "OrderIndex": 1,
+      "Parameters": {
+        "InputHelpText": "",
+        "Rep": "[RecordId]",
+        "OutputHelpText": "",
+        "DNNID": "DNNID",
+        "DNNName": "DNNName",
+        "RepID": "RepID"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RepID]"
+          },
+          {
+            "name": "DisplayName",
+            "value": "[DNNName]"
+          },
+          {
+            "name": "DNNUserID",
+            "value": "[DNNUserID]"
+          }
+        ],
+        "Headers": [],
+        "AllowJsonp": "",
+        "-1": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
