@@ -59,7 +59,7 @@
         },
         "ProcessResponseType": {
           "Expression": "",
-          "Value": "0",
+          "Value": "1",
           "IsExpression": false,
           "Parameters": {}
         },
@@ -86,7 +86,7 @@
       "IsEnabled": true,
       "OrderIndex": 1,
       "Parameters": {
-        "Message": "Keep alive ran on schedule for [apiResult:AssessmentTitle]"
+        "Message": "Keep alive ran on schedule for [apiResult:Content]"
       }
     }
   ],
