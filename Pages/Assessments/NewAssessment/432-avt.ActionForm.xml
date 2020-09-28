@@ -25,7 +25,7 @@
             <rolename>Administrators</rolename>
         </permission>
     </modulepermissions>
-    <title>avt.Action Form</title>
+    <title>New Assessment Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>02ab7346-0f72-4b06-9c69-b4ea4ab9f665</uniqueId>
     <visibility>Maximized</visibility>
