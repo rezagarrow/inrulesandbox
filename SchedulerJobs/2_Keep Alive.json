@@ -1,6 +1,6 @@
 {
   "ApiId": "1d4695a8b5871a0e5c3a93",
-  "ContextPortal": -1,
+  "ContextPortal": 0,
   "ContextUser": 1,
   "IsDebug": false,
   "IsEnabled": true,
@@ -11,7 +11,7 @@
       "TriggerDefId": "RepeatInterval",
       "Parameters": {
         "Start": {
-          "Date": "2020-09-21T00:00:00.000Z",
+          "Date": "2020-09-21",
           "Time": "10:00:00 PM"
         },
         "Interval": {
