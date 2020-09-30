@@ -4,14 +4,14 @@
     "id": 1,
     "name": "Util"
   },
-  "name": "NewToken",
+  "name": "PDFFooter",
   "description": "",
   "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "value": "tes",
+    "value": "\n\t</body>\n</html>",
     "type": "string"
   }
 }
