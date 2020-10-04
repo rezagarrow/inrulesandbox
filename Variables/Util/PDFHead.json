@@ -11,7 +11,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "value": "<!DOCTYPE HTML>\n<!--\n\tRead Only by HTML5 UP\n\thtml5up.net | @ajlkn\n\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)\n-->\n<html>\n\t<head>\n\t\t<title>Read Only by HTML5 UP</title>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\" />\n\t\t\t\t<link rel=\"stylesheet\" href=\"https://inrule-valcalcsandbox.apps.plantanapp.com/Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css?cdv=95\" />\n\t</head>\n\t<body class=\"is-preload\">",
+    "value": "<!DOCTYPE HTML>\n<!--\n\tRead Only by HTML5 UP\n\thtml5up.net | @ajlkn\n\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)\n-->\n<html>\n\t<head>\n\t\t<title>Read Only by HTML5 UP</title>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\" />\n\t\t\t\t<link rel=\"stylesheet\" href=\"https://inrule-valcalcsandbox.apps.plantanapp.com/Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css?cdv=95\" />\n<link href=\"\"https://inrule-valcalcsandbox.apps.plantanapp.com/Portals/_default/skins/xcillion/skin.css?cdv=95\" type=\"text/css\" rel=\"stylesheet\">\n\t</head>\n\t<body class=\"is-preload\">",
     "type": "string"
   }
 }
