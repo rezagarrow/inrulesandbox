@@ -6,7 +6,7 @@
   },
   "name": "PDFHead",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>true</decodeHtml></parser>",
   "defaultValue": "",
   "cacheTime": 0,
   "cacheLayer": "Global",
