@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Company Type",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 13,
+  "OrderIndex": 77,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
