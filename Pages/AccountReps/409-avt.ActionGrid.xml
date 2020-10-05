@@ -1,4 +1,4 @@
-<module type="ActionGrid" version="05.08.06.00">
+<module type="ActionGrid" version="05.09.04.00">
     <contentKey />
     <moduleID>409</moduleID>
     <alignment />
@@ -7,7 +7,6 @@
     <cachemethod />
     <cachetime>0</cachetime>
     <color />
-    <containersrc />
     <displayprint>true</displayprint>
     <displaysyndicate>false</displaysyndicate>
     <displaytitle>true</displaytitle>
