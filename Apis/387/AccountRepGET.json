@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Account Rep record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 50,
+  "OrderIndex": 74,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
