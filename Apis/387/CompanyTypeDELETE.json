@@ -3,7 +3,7 @@
   "Description": "Deletes the provided Company Type record",
   "HttpMethod": "DELETE",
   "IsEnabled": true,
-  "OrderIndex": 16,
+  "OrderIndex": 80,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
