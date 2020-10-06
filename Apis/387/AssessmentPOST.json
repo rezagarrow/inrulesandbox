@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Assessment",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 69,
+  "OrderIndex": 85,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -182,6 +182,24 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "ContactPreference",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PreferenceOther",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 18,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -206,7 +224,9 @@
         "QuestionTwoB": "[QuestionTwoB]",
         "QuestionThree": "[QuestionThree]",
         "Comments": "[Comments]",
-        "AssessmentUrl": "[AssessmentUrl]"
+        "AssessmentUrl": "[AssessmentUrl]",
+        "ContactPreference": "[ContactPreference]",
+        "PreferenceOther": "[PreferenceOther]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -306,6 +326,14 @@
           {
             "name": "AssessmentUrl",
             "value": "[CreatedRecord:AssessmentUrl]"
+          },
+          {
+            "name": "ContactPreference",
+            "value": "[CreatedRecord:ContactPreference]"
+          },
+          {
+            "name": "PreferenceOther",
+            "value": "[CreatedRecord:PreferenceOther]"
           }
         ],
         "Headers": [
