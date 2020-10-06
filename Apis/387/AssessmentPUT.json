@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Assessment record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 71,
+  "OrderIndex": 87,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -199,6 +199,24 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "ContactPreference",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 18,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "PreferenceOther",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 19,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -223,7 +241,9 @@
         "QuestionTwoB": "[QuestionTwoB]",
         "QuestionThree": "[QuestionThree]",
         "Comments": "[Comments]",
-        "AssessmentUrl": "[AssessmentUrl]"
+        "AssessmentUrl": "[AssessmentUrl]",
+        "ContactPreference": "[ContactPreference]",
+        "PreferenceOther": "[PreferenceOther]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
