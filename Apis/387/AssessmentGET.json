@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Assessment record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 70,
+  "OrderIndex": 86,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -116,6 +116,14 @@
           {
             "name": "AssessmentUrl",
             "value": "[Record:AssessmentUrl]"
+          },
+          {
+            "name": "ContactPreference",
+            "value": "[Record:ContactPreference]"
+          },
+          {
+            "name": "PreferenceOther",
+            "value": "[Record:PreferenceOther]"
           }
         ],
         "Headers": []
