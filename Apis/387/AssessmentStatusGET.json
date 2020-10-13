@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Assessment Status record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 34,
+  "OrderIndex": 90,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
