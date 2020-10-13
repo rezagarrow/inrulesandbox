@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Assessment Status record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 35,
+  "OrderIndex": 91,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
