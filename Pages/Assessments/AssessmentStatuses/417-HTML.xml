@@ -1,8 +1,10 @@
 <module type="DNNHTML" version="09.06.01.00">
+    <contentKey />
     <moduleID>417</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
+    <cachemethod />
     <cachetime>0</cachetime>
     <color />
     <displayprint>true</displayprint>
@@ -17,12 +19,14 @@
     <modulepermissions />
     <title>Header</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>1ceb22e9-6442-46a8-a426-bb01fa46c933</uniqueId>
+    <uniqueId>fc7d0bea-cbc3-4a55-859a-408c140222ac</uniqueId>
     <visibility>Maximized</visibility>
     <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
     <webslicettl>0</webslicettl>
+    <cultureCode />
     <modulesettings />
     <tabmodulesettings />
     <definition>DNN_HTML</definition>
     <moduledefinition>Text/HTML</moduledefinition>
+    <content type="DNNHTML" version="09.06.01.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&lt;h3 style=&quot;color: #333333;&quot;&gt;Assessment Statuses&lt;/h3&gt;&lt;hr style=&quot;margin: 5px 0;&quot;&gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
 </module>
